@@ -19,12 +19,12 @@ function totalIncome(applesSoldList) {
 }
 
 function totalIncomeGreenApples(applesSoldList){
-// 	var appleType =0;
-// 	for(var i=0; i<applesSoldList.length; i++){
-// 		appleType += applesSoldList[i];
-// 	}
-// 	return appleType;
-// }
+	var appleType =0;
+	for(var i=0; i<applesSoldList.length; i++){
+		appleType += applesSoldList[i];
+	}
+	return appleType;
+}
 
 function totalProfit(applesSoldList, applePriceMap){
 	return 0;
