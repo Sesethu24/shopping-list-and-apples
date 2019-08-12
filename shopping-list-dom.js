@@ -1,26 +1,23 @@
 // shopping-list dom code here
 const textField = document.querySelector(".textBox");
 const addBtnElem = document.querySelector(".addBtn");
+const selectBudgetRange = document.querySelector(".selectBudget");
+const selectCategory = document.querySelector(".selectCategory");
+const displayBox = document.querySelector(".box");
 
 const instance = ShoppingList();
-
-function createShoppingListElem(items) {
-    var list = document.createElement("li");
-    var itemList = document.createTextNode(items);
-    list.appendChild(itemList);
-    return list;
-}
 
 function addItemsToList() {
 
     if (textField.value) {
-        var display = instance.addItems(textField.value);
-        textField.value = ""
+        instance.addItems(textField.value);
         
-        var list = createShoppingListElem(display);
-
-        document.getElementById("list").appendChild(list);
+        var display = document.createElement("li");
+        var list = document.createTextNode(textField.value);
+        display.appendChild(list);
+        document.getElementById("myList").appendChild(display);
+        textField.value = ""
+}  
     }
-
-}
-addBtnElem.addEventListener('click', addItemsToList)
+   
+   addBtnElem.addEventListener('click', addItemsToList)

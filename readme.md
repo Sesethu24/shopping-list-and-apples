@@ -20,7 +20,7 @@ Do a paper prototype before you start and add that to your GitHub repository.
 
 ### Extra features:
 
-> Only look at these if you have som time left
+> Only look at these if you have some time left
 
 * Storing the list state in LocalStorage.
 * Deleting items from the list.

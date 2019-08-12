@@ -1,7 +1,30 @@
 body{
     background-color: aquamarine;
+    
+}
+h1{
+justify-content: center;
+display: flex;
 }
 .list{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    /* justify-content: center;
+    display: flex; */
+}
+/* .selectBudget{
+    justify-content: center;
+    display: flex;
+} 
+.selectCategory{
+    justify-content: center;
+    display: flex;
+}
+.click{
+    justify-content: center;
+    display: flex;
+} */
+.box{
+    font-size: 5em;
+    font-style: italic;
+    font-size-adjust: inherit;
 }

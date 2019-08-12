@@ -9,20 +9,22 @@ function totalNumberSold(applesSoldList) {
 }
 
 function totalIncome(applesSoldList) {
-	var total = 0;
+
+	var totalCost = 0;
+
 	for(var i=0; i<applesSoldList.length; i++){
-		total += applesSoldList[i].qty;
+		totalCost = price * qty;
 	}
-	return total;
+	return totalCost;
 }
 
 function totalIncomeGreenApples(applesSoldList){
-	var appleType =0;
-	for(var i=0; i<applesSoldList.length; i++){
-		appleType += applesSoldList[i];
-	}
-	return appleType;
-}
+// 	var appleType =0;
+// 	for(var i=0; i<applesSoldList.length; i++){
+// 		appleType += applesSoldList[i];
+// 	}
+// 	return appleType;
+// }
 
 function totalProfit(applesSoldList, applePriceMap){
 	return 0;
@@ -31,7 +33,6 @@ function totalProfit(applesSoldList, applePriceMap){
 // -- extra functions...
 
 function totalPerColorSold(apples, color) {
-	return 0;
 }
 
 function totalIncomePerColor(apples, color) {
